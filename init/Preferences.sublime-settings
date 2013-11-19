@@ -1,8 +1,8 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": false,
-	"draw_white_space": "all",
+	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": false,
 	"file_exclude_patterns":
 	[
@@ -12,24 +12,27 @@
 		"._*",
 		"Thumbs.db",
 		".Spotlight-V100",
-		".Trashes"
+		".Trashes",
+		"*.sublime-workspace",
+		".zfproject.xml",
+		"composer.lock"
 	],
 	"folder_exclude_patterns":
 	[
+		".sass-cache",
 		".git",
-		"node_modules"
+		"nbproject",
+		".svn",
+		".hg",
+		"CVS"
 	],
-	"font_size": 15.0,
+	"font_size": 10.0,
 	"highlight_modified_tabs": true,
+	"highlight_line": true,
 	"hot_exit": false,
-	"line_padding_bottom": 6,
 	"matchBracketsAngle": true,
 	"remember_open_files": false,
-	"rulers":
-	[
-		80
-	],
-	"tab_size": 2,
+	"tab_size": 4,
 	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
