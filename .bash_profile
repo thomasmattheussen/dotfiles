@@ -1,5 +1,14 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
+# Make sure local bin are available
+export PATH="/usr/local/bin:$PATH"
+# Add MySQL tools like mysqldump
+export PATH="/usr/local/mysql/bin:$PATH"
+# Tools globally installed with composer, like phpunit, phpmd
+export PATH="$HOME/.composer/vendor/bin/:$PATH"
+
+# Set application environment variable to "development"
+export APPLICATION_ENV=development
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
