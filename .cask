@@ -12,7 +12,7 @@ installcask google-chrome
 # chrome canary is not available anymore as a cask
 #installcask google-chrome-canary
 installcask firefox
-installcask opera-next
+#installcask opera-next
 installcask imagealpha
 installcask imageoptim
 #installcask macvim
@@ -22,7 +22,7 @@ installcask ffmpegx
 installcask sublime-text
 installcask the-unarchiver
 installcask vlc
-installcask all2mp3
+#installcask all2mp3
 installcask transmit
 #installcask utorrent
 #installcask transmission

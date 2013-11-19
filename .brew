@@ -25,7 +25,9 @@ brew install imagemagick
 brew install ffmpeg
 brew install composer
 brew install yuicompressor
-brew install lynx
+brew install webkit2png
+
+# brew install lynx
 # Pigz gzip tool
 brew install pigz
 # JavaScript shell
