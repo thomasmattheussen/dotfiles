@@ -32,6 +32,8 @@ brew install pigz
 brew install rhino
 # Shell tree view
 brew install tree
+# We prefer to install node later on with nvm
+# brew install node
 
 # Remove outdated versions from the cellar
 brew cleanup
