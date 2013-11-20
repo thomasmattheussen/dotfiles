@@ -29,6 +29,7 @@ installcask transmit
 installcask libreoffice
 installcask mysql-workbench
 installcask dropbox
+installcask spectacle
 #installcask totalfinder
 #installcask totalterminal
 #installcask diffmerge
