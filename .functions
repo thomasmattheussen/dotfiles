@@ -18,7 +18,7 @@ function calc() {
 
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$@"
+	mkdir -p "$@" && cd "$_";
 }
 
 # Change working directory to the top-most Finder window location
@@ -248,8 +248,7 @@ function unquarantine() {
 # Install Grunt plugins and add them as `devDependencies` to `package.json`
 # Usage: `gi contrib-watch contrib-uglify zopfli`
 function gi() {
-	local IFS=,
-	eval npm install --save-dev grunt-{"$*"}
+	npm install --save-dev ${*/#/grunt-}
 }
 
 # `m` with no arguments opens the current directory in TextMate, otherwise
@@ -296,6 +295,7 @@ function o() {
 # defaults to `patch`
 function np() {
 	git pull --rebase && \
+    rm -rf node_modules && \
 	npm install && \
 	npm test && \
 	npm version ${1:=patch} && \
