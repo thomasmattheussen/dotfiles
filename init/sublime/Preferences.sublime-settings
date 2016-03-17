@@ -1,0 +1,61 @@
+{
+	"binary_file_patterns":
+	[
+		"node_modules/**",
+		"vendor/**",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"Desktop.ini",
+		"*.pyc",
+		"._*",
+		"Thumbs.db",
+		".Spotlight-V100",
+		".Trashes",
+		"*.sublime-workspace",
+		".zfproject.xml",
+		"composer.lock",
+		"zend_cache--*"
+	],
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		".git",
+		"nbproject",
+		".svn",
+		".hg",
+		"CVS",
+		".bin"
+	],
+	"font_size": 10.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"shift_tab_unindent": true,
+	"tab_size": 4,
+	"theme": "Cobalt2.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
