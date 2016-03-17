@@ -14,12 +14,10 @@ installcask imageoptim
 installcask miro-video-converter
 installcask handbrake
 installcask ffmpegx
-installcask sublime-text
 installcask the-unarchiver
 installcask vlc
 installcask transmit
 installcask transmission
-installcask libreoffice
 installcask mysql-workbench
 installcask dropbox
 installcask spectacle
