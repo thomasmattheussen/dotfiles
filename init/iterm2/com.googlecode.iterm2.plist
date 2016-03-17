@@ -1566,7 +1566,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/thomasmattheussen/Projects/dotfiles/init</string>
+	<string>/Users/thomasmattheussen/Projects/dotfiles/init/iterm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
