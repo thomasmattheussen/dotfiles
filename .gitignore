@@ -15,3 +15,20 @@ Thumbs.db
 
 *.sublime-project
 *.sublime-workspace
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# Folders to ignore
+.hg
+.svn
+.CVS
