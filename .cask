@@ -1,5 +1,5 @@
 # Install native apps
-brew tap phinze/homebrew-cask
+brew tap caskroom/homebrew-cask
 brew install brew-cask
 
 function installcask() {
@@ -21,3 +21,6 @@ installcask transmission
 installcask mysql-workbench
 installcask dropbox
 installcask spectacle
+installcask virtualbox
+installcask iterm2
+installcask slack
