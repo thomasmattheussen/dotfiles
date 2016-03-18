@@ -444,13 +444,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 ###############################################################################
-# iTunes                                                                      #
-###############################################################################
-
-# Disable automatic device syncing
-defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool true
-
-###############################################################################
 # Mail                                                                        #
 ###############################################################################
 
@@ -704,7 +697,7 @@ defaults write com.twitter.twitter-mac HideInBackground -bool false
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" "Dock" "Finder" "Mail" "iTunes" \
+for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" "Dock" "Finder" "Mail" \
 	"Messages" "Safari" "SystemUIServer" "Terminal" "Transmission" \
 	"Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
