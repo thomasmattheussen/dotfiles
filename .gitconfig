@@ -1,7 +1,7 @@
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
-	# View the current working tree status using the short format
+	# View the current working tree status
 	s = status
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -25,6 +25,8 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# checkout
 	co = checkout
+	# changes
+	changes = show --name-only --oneline
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -32,7 +34,7 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/thomasmattheussen/.gitignore
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error.
 	# [default] trailing-space: looks for spaces at the end of a line
@@ -42,10 +44,6 @@
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
-
-    # Prevent showing files whose names contain non-ASCII symbols as unversioned.
-    # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
-    precomposeunicode = false
 
 [color]
 	# Use colors in Git commands that are capable of colored output when
@@ -84,3 +82,12 @@
 
 [push]
 	default = simple
+[user]
+	name = Thomas Mattheussen
+	email = thomas.mattheussen@gmail.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.2.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -3,6 +3,8 @@
 	[
 		"node_modules/**",
 		"vendor/**",
+		"public/**",
+		"build/**",
 		"*.jpg",
 		"*.jpeg",
 		"*.png",
@@ -42,13 +44,18 @@
 		"CVS",
 		".bin"
 	],
-	"font_size": 10.0,
+	"font_size": 11.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
 	],
 	"match_brackets": true,
 	"match_brackets_angle": true,

@@ -11,14 +11,12 @@ installcask google-chrome
 installcask firefox
 installcask imagealpha
 installcask imageoptim
-installcask miro-video-converter
 installcask handbrake
-installcask ffmpegx
 installcask the-unarchiver
 installcask vlc
 installcask transmit
 installcask transmission
-installcask mysql-workbench
+installcask sequel-pro
 installcask dropbox
 installcask spectacle
 installcask virtualbox
