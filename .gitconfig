@@ -25,6 +25,8 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# checkout
 	co = checkout
+	# branches
+	b = branch
 	# changes
 	changes = show --name-only --oneline
 
