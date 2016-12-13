@@ -29,6 +29,8 @@
 	b = branch
 	# changes
 	changes = show --name-only --oneline
+	# better blame
+	bl = log -p -M --follow --stat
 
 [apply]
 	# Detect whitespace errors when applying a patch
